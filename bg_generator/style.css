@@ -1,0 +1,30 @@
+body {
+  background-image: linear-gradient(#ff0000, #000000);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  padding: 25px;
+}
+
+button {
+  padding: 15px;
+  margin: 15px;
+}
+
+.generator {
+  background-color: rgb(168, 168, 168);
+  margin: auto;
+  max-width: max-content;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.intro {
+  max-width: 600px;
+  margin: auto;
+}
+
+input {
+  border-width: 0px;
+}

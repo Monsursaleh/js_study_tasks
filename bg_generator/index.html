@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="generator">
+        <div class="attributes">
+          <h1>Background Generator</h1>
+          <p class="intro">
+            Use the color pickers to make a gradient color backsground. You can
+            take the CSS code and use in your own CSS file. With the CSS you
+            might want to use
+            <strong
+              >background-repeat: no-repeat; and min-height: 100vh;
+            </strong>
+            to cover the full page and be adaptive to window size.
+          </p>
+          <form>
+            <h3>Colors</h3>
+            <input type="color" name="color1" value="#ff0000" class="color1" />
+            <input type="color" name="color2" value="#000000" class="color2" />
+            <h3>Direction</h3>
+            <label for="bottom">To bottom</label>
+            <input
+              type="radio"
+              value="to bottom"
+              name="direction"
+              id="bottom"
+              checked
+            />
+            <label for="top">To top</label>
+            <input type="radio" value="to top" name="direction" id="top" />
+            <label for="right">To right</label>
+            <input type="radio" value="to right" name="direction" id="right" />
+            <label for="left">To left</label>
+            <input type="radio" value="to left" name="direction" id="left" />
+          </form>
+        </div>
+        <div class="result">
+          <button type="submit">Generate</button>
+          <h3>CSS Code:</h3>
+          <p class="code">
+            background-image: linear-gradient(to bottom, #ff0000, #000000);
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
