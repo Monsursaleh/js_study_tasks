@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Background Generator</title>
+</head>
+<body>
+    <main id="main">
+        <h1>Linear Gradient Generator</h1>
+        <h4>Colors</h4>
+    <form class="operation">
+        <!-- <label for="color1">First color</label> -->
+        <input type="color" id="color1" value="#B99B6B">
+        <!-- <label for="color2">Second color</label> -->
+        <input type="color" id="color2" value="#D5CEA3">
+
+        <h4>Direction</h4>
+    <div class="direction">
+        <label for="1"><span class="material-symbols-outlined">
+            south_east
+            </span></label>
+        <input type="radio" name="direction" id="1" value="to bottom right"
+        checked
+        required
+        disabled>
+        <label for="2"><span class="material-symbols-outlined">
+            south
+            </span></label>
+        <input type="radio" name="direction" id="2" value="to bottom">
+        <label for="3"><span class="material-symbols-outlined">
+            south_west
+            </span></label>
+        <input type="radio" name="direction" id="3" value="to bottom left">
+        <label for="4"><span class="material-symbols-outlined">
+            east
+            </span></label>
+        <input type="radio" name="direction" id="4" value="to right">
+
+        <div></div>
+
+        <label for="5"><span class="material-symbols-outlined">
+            west
+            </span></label>
+        <input type="radio" name="direction" id="5" value="to left">
+        <label for="6"><span class="material-symbols-outlined">
+            north_east
+            </span></label>
+        <input type="radio" name="direction" id="6" value="to-top">
+        <label for="7"><span class="material-symbols-outlined">
+            north
+            </span></label>
+        <input type="radio" name="direction" id="7" value="to-top-right">
+        <label for="8"><span class="material-symbols-outlined">
+            north_west
+            </span></label>
+        <input type="radio" name="direction" id="8" value="to bottom">
+    </div>
+        <p>
+            <h4>CSS</h4>
+            <p> <span id="cssCode">
+            Background: linear-gradient(to right, red, blue);</span>
+        </p>
+        </p>
+    </form>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
