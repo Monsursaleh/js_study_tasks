@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(https://storage.googleapis.com/stockai-stock-photos-protected/original/1674528229198-bda9684b-08e8-4b03-8363-da83cd773583-3072.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=firebase-adminsdk-hu3sa%40stockai-362303.iam.gserviceaccount.com%2F20230131%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20230131T144003Z&X-Goog-Expires=86401&X-Goog-SignedHeaders=host&X-Goog-Signature=57df9256692474ef3526f9c93d3da5f3f2f787e4c8a3cef7b45bd8d7c16a25ecf7172fedb196ffcfe5e7d6110ab7c872a8cd96e8bc1a38d08ad6528a29653cdd8862c7441eead8775074b6603e7bb7016c8186fc555dcc24643cb3179076a2e8a9020459b781a2ee21ffc26872a7d1d0d9a68df2501570db1d960b32587dcfeb79859fe8ec1f7400691f8a6fc74202a90859ab61099427643452557fcceb5dab2571f94e638866b2addbee027c84718866e6fd86000c3bf93f4fe315456ee07b5aba761775b511edc91d05d7f8ab5ab0f56da4eda9fdbfdb148946d8d7e66ce4e270f9c5735d9ca7e96307b5c0b226f584a32f355c9c0f152cc2da548ee8dc41);
+}
+.container {
+  width: 70%;
+  margin: 50px auto;
+  padding: 15px;
+  border: 2px solid black;
+  font-size: 20px;
+  line-height: 2;
+}
+
+body {
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+label {
+  display: inline-block;
+  width: 200px;
+  margin-right: 2%;
+}
+
+.size {
+  width: 70%;
+  margin: 20px auto;
+
+  padding: 2%;
+}
+.addFilling {
+  width: 70%;
+  margin: 20px auto;
+  padding: 2%;
+}
+
+.delivery_container {
+  width: 70%;
+  margin: 20px auto;
+
+  padding: 17%;
+}
+.output_container {
+  width: 90%;
+  margin: 10px auto;
+
+  padding: 10%;
+  font-size: 20px;
+}
+
+.customerInfo_container {
+  width: 70%;
+  margin: 20px auto;
+  padding: 17%;
+  font-size: 20px;
+  line-height: 2;
+}
+
+#result {
+  text-transform: uppercase;
+}
+input[type="radio"],
+[type="checkbox"] {
+  width: 10%;
+  height: 2em;
+}
+
+[type="text"] {
+  width: 78%;
+  height: 4em;
+}
+select {
+  width: 200px;
+  height: 42px;
+}

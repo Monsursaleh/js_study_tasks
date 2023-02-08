@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 102.5%;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(4, 6, 4);
+  font-family: "Press Start 2P", sans-serif;
+  color: rgb(87, 178, 51);
+  line-height: 1.2;
+  font-weight: lighter;
+}
+
+/* LAYOUT */
+header {
+  position: relative;
+  height: 25vh;
+  text-align: center;
+  margin: 2rem auto;
+  border-bottom: 7px solid rgb(147, 145, 33);
+}
+main {
+  height: 165vh;
+  color: rgb(221, 231, 223);
+  background-image: url(https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.customer-left {
+  width: 20rem;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.output-Section {
+  width: 20rem;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  line-height: 2;
+}
+
+.form_group {
+  margin: 1rem;
+}
+
+input[type="radio"],
+[type="checkbox"] {
+  width: 10%;
+  height: 2em;
+  float: right;
+}
+
+input[type="text"],
+#delivery_method {
+  width: 16rem;
+  height: 3rem;
+  margin-top: 2rem;
+}
+.addFilling,
+#delivery_method {
+  margin: 2rem;
+}

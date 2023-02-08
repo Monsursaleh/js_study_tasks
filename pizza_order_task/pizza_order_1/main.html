@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Pizza Order</title>
+  </head>
+  <body>
+    <form>
+      <div class="container">
+        <h1>Here is your delicious pizza, Make your own pizza 🙂</h1>
+        <p>
+          Pizza is like straight out of your nap, because you decide on the
+          toppings. Try, mix, go crazy and find the most delicious taste world
+          just for you.
+        </p>
+        <div class="size">
+        <h2>Choose the size from below option</h2>
+        <label for="for_2">For 2, the price is 7.50</label>
+        <input type="radio" id="for_2" value="7.50" name="size"/>
+        <label for="for_4">For 4, the price is 10.50</label>
+        <input type="radio" id="for_4" value="10.50"name="size"/  />
+        <label for="for_6">For 6, the price is 12.50</label>
+        <input type="radio" id="for_6" value="12.50"name="size" />
+        <label for="for_8">For 8, the price is 15.50</label>
+        <input type="radio" id="for_8" value="15.50"name="size" >
+      </div>
+      <div class="addFilling">
+        <h2>Here is the list of filling</h2>
+        <p>
+          The product must have 1 filling, over 4 fillings you have to pay +.5€
+        </p>
+
+        <label for="avocaddo" id="avocaddo"> Avocaddo</label>
+        <input type="checkbox" id="avocaddo" name="avocaddo" value="0" />
+        <label for="olive" id="olive"> Olive</label>
+        <input type="checkbox" id="olive" name="olive" value="1" />
+        <label for="paprika" id="olive"> Paprika</label>
+        <input type="checkbox" id="paprika" name="paprika" value="2" />
+        <label for="mushroom" id="Mushroom"> Mushroom</label>
+        <input type="checkbox" id="mushroom" name="mushroom" value="3" />
+
+        <label for="garlic" id="garlic"> Garlic</label>
+        <input type="checkbox" id="garlic" name="garlic" value="4" />
+
+        <label for="chicken" id="garlic"> Chicken</label>
+        <input type="checkbox" id="chicken" name="chicken" value="5" />
+        <label for="beef" id="beef"> Beef</label>
+        <input type="checkbox" id="beef" name="beef" value="6" />
+        <label for="tofu" id="tofu"> Tofu</label>
+        <input type="checkbox" id="tofu" name="tofu" value="7"/>
+        <label for="mozarilla" id="mozarilla">Mozarilla</label>
+        <input type="checkbox" id="mozarilla" name="mozarilla" value="8" />
+        <label for="redonion" id="redonion">Red Onion</label>
+        <input type="checkbox" id="redonion" name="redonion" value="9" />
+        <label for="tomato" id="tomato">Tomato</label>
+        <input type="checkbox" id="tomato" name="tomato" value="9" />
+      </div>
+
+      <div class="delivery_container">
+        <label for="delivery_method">Choose delivery Method:</label>
+        <select name="mood" id="delivery_method" onchange="deliveredBy()">
+          <option value="Take Away ">Take Away <ption>
+          <option value="Eat Here">Eat Here</option>
+          <option value="home Delivery ">Home Delivery</option>
+          
+        </select>
+         </div>
+      </div>
+      <div class="customerInfo_container">
+        <label for="text"> Full Name:</label>
+        <input type="text" id="name" name="fname"  placeholder=" Monsur Saleh">
+      </div>
+    </div>
+   </form>
+
+   <div class="output_container">
+   <p id="result"> Your order summery will be here</p>
+   </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
