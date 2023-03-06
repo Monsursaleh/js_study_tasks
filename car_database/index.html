@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Car licenseplate database</title>
+  </head>
+  <body>
+    <header>
+      <div class="search-group">
+            <form id="search">
+          <h2>Search:</h2>
+          <form id="search">
+            <label for="search">Search for license plate</label>
+            <input type="text" id="search-param" />
+            <input type="submit" value="Search" />
+          </form>
+          <div id="search-result"></div>
+        </div>
+      </form>
+    </header>
+    <main>
+      <div id="car-details">
+        <h2>Car Details</h2>
+        <form id="carDetails">
+          <div>
+            <label for="plate">License Plate:</label>
+            <input type="text" name="details" id="plate" value="123" />
+          </div>
+          <div>
+            <label for="maker">Car Maker</label>
+            <input type="text" name="details" id="maker" value="Tesla" />
+          </div>
+          <div>
+            <label for="model">Car Model</label>
+            <input type="text" name="details" id="model" value="Y" />
+          </div>
+          <div>
+            <label for="owner">Car Owner</label>
+            <input type="text" name="details" id="owner" value="Toni" />
+          </div>
+          <div>
+            <label for="price">Car Price</label>
+            <input type="number" name="details" id="price" value="200000" />
+          </div>
+          <div>
+            <label for="color">Car Color</label>
+            <input type="text" name="details" id="color" value="white" />
+          </div>
+          <div>
+            <input type="submit" value="Submit" id="submit" />
+            <input type="reset" value="Reset" />
+          </div>
+        </form>
+      </div>
+      <div id="database">
+        <h2>Car database</h2>
+        <div class="result"></div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

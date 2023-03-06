@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*     overscroll-behavior: none; */
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #e3f0f2;
+  font-family: "Trebuchet MS", sans-serif;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  color: white;
+  background-color: #e3f0f2;
+}
+header,
+section,
+footer {
+  padding: 1rem;
+}
+
+footer {
+  background-color: #235e67;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 20px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  box-shadow: none;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: beige;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: none;
+  font-size: 3rem;
+  background: none;
+}
+
+section {
+  min-height: 75vh;
+  /* ?? */
+  scroll-margin-top: 6rem;
+  border: 1px solid black;
+}
+section:first-child {
+  background-color: linear-gradient(to bottom, #0e353b, #26a977);
+}
+section:nth-child(2) {
+  background-image: linear-gradient(to top, #1e91a3, #22b167);
+}
+section:last-child {
+  background-image: linear-gradient(to bottom, #6faab3, #235e67);
+}
+/* //.bg added in after scroll in header */
+.bg {
+  background: rgb(120, 166, 87);
+  color: "#235e67";
+  padding: 0.5rem;
+}
+.bg h1 {
+  font-size: 1rem;
+}
+/* //by :default none works when shrik the page */
+/* icon background-color none */
+.mobile {
+  display: none;
+  background: none;
+}
+
+/* overlay modal */
+/* overlay div > modal div > .modal content + close button  */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  /* // this display flex is container flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* //display here make ti disappear */
+  display: none;
+}
+/* // overlay visible when we click it bedfault none in overlay flex container  */
+/* if its is flex container then display flex if not then display block */
+/* class='overlay visible' will added to show the content */
+.overlay.visible {
+  display: flex;
+}
+/* inside the overlay container  */
+.modal {
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60vh;
+  width: 75vw;
+  gap: 2vw;
+  border: 7px solid rgb(124, 105, 144);
+  line-height: 2;
+  /* top: 0;
+  left: 0; */
+  /* width: 75vw;
+  max-height: 50vh;
+  border-radius: 10px;
+  padding: 2rem; */
+  position: relative;
+}
+.modal button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+/* Mobile settings */
+/* then 850 it will work less */
+@media (max-width: 850px) {
+  /* big inline ul item disappear */
+  nav ul {
+    display: none;
+  }
+  /* icon was display none before not it will show after screen shrinking */
+  .mobile {
+    display: block;
+  }
+  /* // responsive class added from js dom then it will  appear  by block responsive design class when screen size change   */
+  ul.responsive {
+    display: block;
+    background-color: rgb(165, 148, 148);
+    color: rgb(50, 35, 35);
+    position: absolute;
+    left: 0;
+    top: 3.5rem;
+    width: 100%;
+  }
+  /* this li block make in-line to block  under the ul> li  */
+  ul.responsive li {
+    display: block;
+    margin: 1rem;
+  }
+}

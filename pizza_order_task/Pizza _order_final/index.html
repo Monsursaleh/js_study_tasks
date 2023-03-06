@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pizza Task</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Order <span id="the">The</span> Pizza</h1>
+        <img src="logo.jpeg" alt="pizza logo" />
+      </header>
+      <div class="main_body">
+        <section class="order">
+          <form>
+            <div class="order_name">
+              <label for="order_name_id"><h3>Coustomar name:</h3></label>
+              <input type="text" placeholder=" Your name" id="order_name_id" />
+            </div>
+            <div class="order_size">
+              <h3>Size</h3>
+              <div>
+                <p>
+                  <input type="radio" name="size" id="size_2" />
+                  <label for="size_2">Size 2</label>
+                </p>
+                <p>7.50€</p>
+              </div>
+              <div>
+                <p>
+                  <input type="radio" name="size" id="size_4" />
+                  <label for="size_4">Size 4</label>
+                </p>
+                <p>10.50€</p>
+              </div>
+              <div>
+                <p>
+                  <input type="radio" name="size" id="size_6" />
+                  <label for="size_6">Size 6</label>
+                </p>
+                <p>12.50€</p>
+              </div>
+              <div>
+                <p>
+                  <input type="radio" name="size" id="size_8" />
+                  <label for="size_8">Size 8</label>
+                </p>
+                <p>15.50€</p>
+              </div>
+            </div>
+            <div class="toppings">
+              <h3>Toppings</h3>
+              <div class="toppings_optiions">
+                <div class="topp_option">
+                  <input type="checkbox" id="pineapple" />
+                  <label for="pineapple">Pineapple</label>
+                </div>
+                <div class="topp_option">
+                  <input type="checkbox" id="abocoddo" />
+                  <label for="abocoddo">Abocoddo</label>
+                </div>
+                <div class="topp_option">
+                  <input type="checkbox" id="chilli" />
+                  <label for="chilli">Chilli</label>
+                </div>
+                <div class="topp_option">
+                  <input type="checkbox" id="onion" />
+                  <label for="onion">Oniion</label>
+                </div>
+                <div class="topp_option">
+                  <input type="checkbox" id="garlic" />
+                  <label for="garlic">Garlic</label>
+                </div>
+                <div class="topp_option">
+                  <input type="checkbox" id="mushroom" />
+                  <label for="mushroom">Mushroom</label>
+                </div>
+                <div class="topp_option">
+                  <input type="checkbox" id="tuna" />
+                  <label for="tuna">Tuna</label>
+                </div>
+                <div class="topp_option">
+                  <input type="checkbox" id="cheese" />
+                  <label for="cheese">Cheeese</label>
+                </div>
+                <div class="topp_option">
+                  <input type="checkbox" id="sausage" />
+                  <label for="sausage">Sausage</label>
+                </div>
+                <div class="topp_option">
+                  <input type="checkbox" id="pepperoni" />
+                  <label for="pepperoni">Pepperoni</label>
+                </div>
+              </div>
+              <p>
+                **4 toppings comes with the pizza price, each extra will cost
+                0.50€
+              </p>
+            </div>
+            <div class="delivery">
+              <label><h3>Delivery</h3></label>
+              <select id="deli">
+                <option value="Not selected">Select from bellow</option>
+                <option value="Home delivery">Home delivery</option>
+                <option value="Take way">Take way</option>
+                <option value="Eat in">Eat in</option>
+              </select>
+            </div>
+          </form>
+        </section>
+        <section class="summary">
+          <h3>Order details</h3>
+          <div class="sum_heading">
+            <h4>Items</h4>
+            <h4>Price</h4>
+          </div>
+          <div class="sum_name">
+            <p>Coustomar name:</p>
+            <p id="sum_name_id"></p>
+          </div>
+          <div class="sum_size">
+            <div>
+              <p>Pizza:</p>
+              <p id="sum_size_id"></p>
+            </div>
+            <p id="sum_size_price_id">0€</p>
+          </div>
+          <div class="sum_topp">
+            <div>
+              <p>Toppings:</p>
+              <p id="sum_topp_id"></p>
+            </div>
+            <div>
+              <p id="sum_topp_price_id">0€</p>
+            </div>
+          </div>
+          <div class="sum_deli">
+            <div>
+              <p>Delivery:</p>
+              <p id="sum_deli_id"></p>
+            </div>
+            <p id="sum_deli_price_id">0€</p>
+          </div>
+          <div class="sum_total">
+            <p>Total</p>
+            <p id="sum_total_id"></p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

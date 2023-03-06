@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculators</title>
+  </head>
+  <body>
+    <h1>Calculators</h1>
+    <h2>Gasoline price</h2>
+    <p>
+      Make a program that asks the price of the gasoline and the amount of money
+      from the user. The program calculates how much gasoline the user gets with
+      the money. The result is displayed on to screen.
+    </p>
+    <ul>
+      <li>
+        If there are more than 10 litres, then the message on the screen: "good,
+        you can escape now"
+      </li>
+      <li>If less, it shows the message: "Ups, you have to stay here.</li>
+    </ul>
+
+    <form>
+      <div class="form_group">
+        <label for="price">Price</label>
+        <input type="number" id="price" />
+      </div>
+      <div class="form_group">
+        <label for="money">Money</label>
+        <input type="number" id="money" />
+      </div>
+      <button id="calc">Calculate</button>
+    </form>
+
+    <p id="answer"></p>
+
+    <h2>Temperature conventer</h2>
+    <form>
+      <div class="form_group">
+        <label for="celsius">Celsius</label>
+        <input
+          type="number"
+          id="celsius"
+          oninput="tempConventer(this.id, this.value)"
+        />
+      </div>
+      <div class="form_group">
+        <label for="fahrenheit">Fahrenheit</label>
+        <input
+          type="number"
+          id="fahrenheit"
+          oninput="tempConventer(this.id, this.value)"
+        />
+      </div>
+      <div class="form_group">
+        <label for="kelvin">Kelvin</label>
+        <input
+          type="number"
+          id="kelvin"
+          oninput="tempConventer(this.id, this.value )"
+        />
+      </div>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>
